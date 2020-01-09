@@ -24,8 +24,8 @@ class FullSearch:
             feature_names = list(range(self.n_features))
         assert len(feature_names) == self.n_features
         self.feature_names = feature_names
-        self.fname2ind = {name:i for i, name in enumerate(self.feature_names)}
-        self.ind2fname = {i:name for i, name in enumerate(self.feature_names)}
+        self.fname2ind = {name: i for i, name in enumerate(self.feature_names)}
+        self.ind2fname = {i: name for i, name in enumerate(self.feature_names)}
 
         self.X_test = X_test
         self.y_test = y_test
@@ -42,8 +42,7 @@ class FullSearch:
     def _combinations_count(self):
         return 2 ** self.n_features
 
-
-    def find_best_subset(self):
+    def run(self):
         best_score = np.inf
         best_subset = []
 
