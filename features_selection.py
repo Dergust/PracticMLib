@@ -13,7 +13,8 @@ class FullSearch:
         if (cv is None) & ((X_test is None) | (y_test is None)):
             raise  Exception("cv or (X_test, y_test) must be initialized")
 
-        self.X = X; self.y = y
+        self.X = X
+        self.y = y
         self.n_samples, self.n_features = X.shape
 
         self.model = model
