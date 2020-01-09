@@ -44,7 +44,7 @@ class FullSearch:
         return 2 ** self.n_features
 
     def run(self):
-        best_score = np.inf
+        best_score = -np.inf
         best_subset = []
 
         for n_features in range(1, self.n_features + 1):
@@ -67,7 +67,7 @@ class FullSearch:
 
                 score = score[0]
 
-                if score < best_score:
+                if score > best_score:
                     best_score = score
                     best_subset = indices
         feature_names = [self.ind2fname[i] for i in best_subset]
