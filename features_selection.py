@@ -73,5 +73,5 @@ class FullSearch:
         feature_names = [self.ind2fname[i] for i in best_subset]
 
         return OrderedDict([('feature_indices', best_subset),
-               ('feature_names', feature_names),
-               ('best_value', best_score)])
+                            ('feature_names', feature_names),
+                            ('best_value', best_score)])
