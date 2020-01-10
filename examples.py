@@ -20,7 +20,7 @@ def greedy_search_test():
     cv = StratifiedKFold(n_splits=5, shuffle=True)
     model = LogisticRegression(C=1, solver='liblinear')
     scorer = make_scorer(roc_auc_score)
-    greedy_search = GreedySearch(X, y, model=model, scorer=scorer, cv=cv, forward=True, verbose=True)
+    greedy_search = GreedySearch(X, y, model=model, scorer=scorer, cv=cv, frozen_indices=[1], forward=True, verbose=True)
     print(greedy_search.run())
 
 def clear_test():

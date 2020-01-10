@@ -25,7 +25,6 @@ class FullSearch:
             feature_names = list(range(self.n_features))
         assert len(feature_names) == self.n_features
         self.feature_names = feature_names
-        #self.fname2ind = {name: i for i, name in enumerate(self.feature_names)}
         self.ind2fname = {i: name for i, name in enumerate(self.feature_names)}
 
         self.X_test = X_test
@@ -80,7 +79,7 @@ class FullSearch:
 
 
 class GreedySearch:
-    def __init__(self, X, y, model, scorer, score_proba_pred=True,
+    def __init__(self, X, y, model, scorer, score_proba_pred=True, frozen_indices=[],
                  cv=None, X_test=None, y_test=None, feature_names=None, forward=True, verbose=False):
 
         self.X = X
@@ -90,6 +89,7 @@ class GreedySearch:
         self.model = model
         self.scorer = scorer
         self.cv = cv
+        self.frozen_indices = frozen_indices
 
         if feature_names is None:
             feature_names = list(range(self.n_features))
@@ -109,10 +109,11 @@ class GreedySearch:
         self.proba_pred = score_proba_pred
         self.log_results = dict()
 
+
     def run(self):
         if self.forward:
             self.curr_value = -np.inf
-            self.curr_features = set()
+            self.curr_features = set(self.frozen_indices)
             while self._forward_step():
                 pass
         else:
