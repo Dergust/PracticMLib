@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PracticMLib.iml" filepath="$PROJECT_DIR$/.idea/PracticMLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ml_common_practices.iml" filepath="$PROJECT_DIR$/.idea/ml_common_practices.iml" />
     </modules>
   </component>
 </project>
