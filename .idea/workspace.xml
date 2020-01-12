@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="357f8483-9d73-4c19-8234-80ad3aefd4f0" name="Default Changelist" comment="frozen indices was added to greedy search forward">
-      <change afterPath="$PROJECT_DIR$/ml_common_practices/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ml_common_practices/examples/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PracticMLib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ml_common_practices.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="357f8483-9d73-4c19-8234-80ad3aefd4f0" name="Default Changelist" comment="lib files were added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml_common_practices/examples/examples.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features_extraction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/features_selection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models_selection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/texts_preprocessing.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,13 +16,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
               <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ml_common_practices/lib_/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -96,7 +91,20 @@
             <path>
               <item name="ml_common_practices" type="b2602c69:ProjectViewProjectNode" />
               <item name="PracticMLib" type="462c0819:PsiDirectoryNode" />
-              <item name="ml_common_practices.egg-info" type="462c0819:PsiDirectoryNode" />
+              <item name="ml_common_practices" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ml_common_practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticMLib" type="462c0819:PsiDirectoryNode" />
+              <item name="ml_common_practices" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ml_common_practices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracticMLib" type="462c0819:PsiDirectoryNode" />
+              <item name="ml_common_practices" type="462c0819:PsiDirectoryNode" />
+              <item name="lib_" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -113,6 +121,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ml_common_practices" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/ml_common" />
@@ -342,7 +353,7 @@
       <option name="presentableId" value="Default" />
       <updated>1578597314874</updated>
       <workItem from="1578597316151" duration="14535000" />
-      <workItem from="1578842789306" duration="9832000" />
+      <workItem from="1578842789306" duration="11470000" />
     </task>
     <task id="LOCAL-00001" summary="create tests.py">
       <created>1578602456042</created>
@@ -372,11 +383,25 @@
       <option name="project" value="LOCAL" />
       <updated>1578690958138</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="setup structure was added and backward frozen indices support in greedy searching was added">
+      <created>1578854257718</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578854257718</updated>
+    </task>
+    <task id="LOCAL-00006" summary="lib files were added">
+      <created>1578854505899</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578854505899</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24367000" />
+    <option name="totallyTimeSpent" value="26005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -414,7 +439,9 @@
     <MESSAGE value="tests.py is worked" />
     <MESSAGE value="greedy search was added" />
     <MESSAGE value="frozen indices was added to greedy search forward" />
-    <option name="LAST_COMMIT_MESSAGE" value="frozen indices was added to greedy search forward" />
+    <MESSAGE value="setup structure was added and backward frozen indices support in greedy searching was added" />
+    <MESSAGE value="lib files were added" />
+    <option name="LAST_COMMIT_MESSAGE" value="lib files were added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ml_common_practices/lib/models_selection.py">
@@ -482,6 +509,9 @@
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ml_common_practices/lib_/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
